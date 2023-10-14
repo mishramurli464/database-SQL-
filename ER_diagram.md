@@ -8,7 +8,31 @@ Here are the key components and concepts of an ER diagram:
 Entities are objects or concepts that have data that needs to be stored in the database. In the diagram, entities are represented as rectangles. Each entity typically corresponds to a table in the database.
 
 ## Attributes: 
-Attributes are properties or characteristics of entities. These are represented within entities as ovals or ellipses. Attributes are used to describe the data that needs to be stored for each entity.
+Attributes are properties or characteristics of entities. These are represented within entities as ovals or ellipses. Attributes are used to describe the data that needs to be stored for each entity.  
+
+-->Simple Attribute:  
+A simple attribute is an atomic attribute that cannot be divided any further. It represents a single, indivisible value. For example, the "Name" attribute of a "Person" entity is a simple attribute.
+
+-->Composite Attribute:  
+A composite attribute is an attribute that can be divided into smaller, more basic sub-attributes that represent more basic characteristics with independent meanings. For example, an "Address" attribute can be composed of sub-attributes like "Street," "City," "State," and "ZIP Code."
+
+-->Derived Attribute:   
+A derived attribute is one whose value is derived from another attribute, often through a mathematical formula or calculation. It does not have a direct value stored in the database but is computed when needed. An example is a "Age" attribute derived from a "Date of Birth" attribute.
+
+-->Multi-valued Attribute:  
+A multi-valued attribute can hold multiple values for a single entity. For instance, an "Email" attribute for a "Person" entity may have multiple email addresses.
+
+-->Key Attribute:  
+A key attribute is used to uniquely identify instances of an entity within a set. It can be a primary key or a candidate key. For example, an "EmployeeID" attribute is a key attribute for an "Employee" entity.
+
+-->Single-valued Attribute:   
+A single-valued attribute can hold only one value for a given entity. Most attributes are single-valued by default.
+
+-->Null Attribute:   
+A null attribute is an attribute that can have a null or missing value. It is used when the value may be unknown or not applicable.
+
+Stored Attribute:   
+A stored attribute is one whose values are permanently stored in the database. Most attributes in a database are stored attributes.  
 
 ## Relationships: 
 Relationships indicate how entities are related or connected to one another. They are represented as diamond shapes connecting entities. Relationships help define how data is shared between entities.

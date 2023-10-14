@@ -23,7 +23,7 @@ Here's an explanation of cardinality in ER diagrams with diagrams to illustrate:
 In a one-to-one relationship, each entity on one side is associated with exactly one entity on the other side, and vice versa.
 For example, consider a "Person" entity and a "Passport" entity. Each person has only one passport, and each passport belongs to only one person.
 
-### --> One-to-Many (1:N) Relationship:
+### --> One-to-Many (1:N) Relationship:  
 
 In a one-to-many relationship, each entity on one side can be associated with one or more entities on the other side, but entities on the other side are associated with only one entity on the first side.
 For instance, consider an "Author" entity and a "Book" entity. An author can write multiple books, but each book is authored by only one author.
@@ -56,7 +56,25 @@ It means that every student must have enrolled at least in one course.
 *Total participation constraint*   
 It specifies that each entity in the entity set may or may not participate in the relationship instance of the relationship set, is also called as optional participation.  
 A single line between the entities i.e courses and enrolled in a relationship signifies the partial participation,which means there might be some courses where enrollments are not made i.e enrollments are optional in that case  
-![image](https://github.com/mishramurli464/database-SQL-/assets/128781536/5a686f76-5431-4ab9-8a18-279e10204143)
+![image](https://github.com/mishramurli464/database-SQL-/assets/128781536/5a686f76-5431-4ab9-8a18-279e10204143)     
+
+## Degree of relationship  
+Here are the most common degrees of relationship:  
+
+*Unary Relationship (Degree 1):* 
+In a unary relationship, an entity is related to itself. For example, consider an entity "Employee" and a unary relationship "Supervises," where an employee supervises other employees.
+
+*Binary Relationship*  
+
+Binary Relationship (Degree 2): In a binary relationship, two entities are related to each other. This is the most common type of relationship and is used to represent associations between two different entity types. For example, consider entities "Author" and "Book" with a binary relationship "Writes," where authors write books.
+
+*TernaryRelationship*  
+
+Ternary Relationship (Degree 3): In a ternary relationship, three entities are related to each other. It is less common than binary relationships but is used when a relationship involves three distinct entities. For example, consider entities "Student," "Course," and "Professor" with a ternary relationship "Teaches," where a student enrolls in a course taught by a professor.  
+
+*Higher-Degree Relationships:*  
+
+Higher-Degree Relationships: Relationships can involve more than three entities, resulting in higher-degree relationships. For example, a quaternary relationship involves four entities, and so on. Higher-degree relationships are used when modeling complex scenarios that involve multiple entities interacting with each other.
 
 
 

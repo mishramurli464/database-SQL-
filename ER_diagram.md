@@ -5,7 +5,20 @@ An Entity-Relationship (ER) diagram is a graphical representation used in databa
 Here are the key components and concepts of an ER diagram:
 
 ## Entities: 
-Entities are objects or concepts that have data that needs to be stored in the database. In the diagram, entities are represented as rectangles. Each entity typically corresponds to a table in the database.
+Entities are objects or concepts that have data that needs to be stored in the database. In the diagram, entities are represented as rectangles. Each entity typically corresponds to a table in the database.  
+Here are some common types of entities:
+
+-->Strong Entity:
+
+A strong entity is an entity that can exist independently, meaning it has attributes that uniquely identify each instance of the entity. In other words, it doesn't rely on other entities to be uniquely identified. For example, "Person" is a strong entity because it can be uniquely identified by attributes like "Social Security Number" or "Employee ID."
+
+-->Weak Entity:
+
+A weak entity is an entity that cannot exist independently and depends on another entity, known as the "owning" or "parent" entity, to be uniquely identified. Weak entities often have a partial key that, when combined with the key of the owning entity, forms a unique identifier. For example, "Dependent" may be a weak entity that depends on the "Employee" entity to be uniquely identified.  
+
+-->Associative Entity:
+
+An associative entity, also known as a junction entity or relationship entity, is used to represent a many-to-many relationship between other entities. It contains attributes that are specific to the relationship itself. For example, in a database modeling students and courses, an "Enrollment" entity could serve as an associative entity that relates students to courses.
 
 ## Attributes: 
 Attributes are properties or characteristics of entities. These are represented within entities as ovals or ellipses. Attributes are used to describe the data that needs to be stored for each entity.  

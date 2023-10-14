@@ -115,7 +115,10 @@ Ternary Relationship (Degree 3): In a ternary relationship, three entities are r
 
 *Higher-Degree Relationships:*  
 
-Higher-Degree Relationships: Relationships can involve more than three entities, resulting in higher-degree relationships. For example, a quaternary relationship involves four entities, and so on. Higher-degree relationships are used when modeling complex scenarios that involve multiple entities interacting with each other.
+Higher-Degree Relationships: Relationships can involve more than three entities, resulting in higher-degree relationships. For example, a quaternary relationship involves four entities, and so on. Higher-degree relationships are used when modeling complex scenarios that involve multiple entities interacting with each other.  
+
+![image](https://github.com/mishramurli464/database-SQL-/assets/128781536/69213383-5663-4ebc-ac17-402b7bbd9fd4)
+
 
 
 

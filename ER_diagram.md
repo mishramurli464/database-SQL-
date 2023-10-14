@@ -54,7 +54,7 @@ It means that every student must have enrolled at least in one course.
 ![image](https://github.com/mishramurli464/database-SQL-/assets/128781536/57a341ce-20fd-474b-abc3-7e4f70fd2298)   
 
 *Total participation constraint*   
-It specifies that each entity in the entity set may or may not participate in the relationship instance of the relationship set, is also called as optional participation 
+It specifies that each entity in the entity set may or may not participate in the relationship instance of the relationship set, is also called as optional participation.  
 A single line between the entities i.e courses and enrolled in a relationship signifies the partial participation,which means there might be some courses where enrollments are not made i.e enrollments are optional in that case  
 ![image](https://github.com/mishramurli464/database-SQL-/assets/128781536/5a686f76-5431-4ab9-8a18-279e10204143)
 

@@ -1,6 +1,8 @@
 # database-SQl
 
-An Entity-Relationship (ER) diagram is a graphical representation used in database design to illustrate the structure of a database. It visually represents the entities, attributes, relationships between entities, and the constraints on those relationships. ER diagrams are a crucial tool for designing and modeling databases and serve to provide a clear and visual representation of how data is organized within a database.
+An Entity-Relationship (ER) diagram is a graphical representation used in database design to illustrate the structure of a database. It visually represents the entities, attributes, relationships between entities, and the constraints on those relationships. ER diagrams are a crucial tool for designing and modeling databases and serve to provide a clear and visual representation of how data is organized within a database.  
+![image](https://github.com/mishramurli464/database-SQL-/assets/128781536/2a40299e-8a30-4e56-8769-e6423114691b)
+
 
 Here are the key components and concepts of an ER diagram:
 

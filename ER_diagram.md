@@ -31,7 +31,7 @@ A single-valued attribute can hold only one value for a given entity. Most attri
 -->Null Attribute:   
 A null attribute is an attribute that can have a null or missing value. It is used when the value may be unknown or not applicable.
 
-Stored Attribute:   
+-->Stored Attribute:   
 A stored attribute is one whose values are permanently stored in the database. Most attributes in a database are stored attributes.  
 
 ## Relationships: 

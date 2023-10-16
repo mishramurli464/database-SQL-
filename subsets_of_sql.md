@@ -64,7 +64,7 @@ This command would delete all rows from the "Employees" table, leaving an empty 
 # Data Manipulation Language (DML): 
 DML is used for modifying and manipulating data within the database. It includes statements like INSERT, UPDATE, and DELETE for adding, modifying, and removing records.  
 
-INSERT:
+## INSERT:
 The INSERT statement is used to add new rows (records) to a table.
 Example:
 ```sql
@@ -73,7 +73,7 @@ VALUES ('John', 'Doe', 'HR');
 ```  
 This SQL command adds a new employee to the "Employees" table with the specified first name, last name, and department.
 
-UPDATE:
+## UPDATE:
 The UPDATE statement is used to modify existing data in a table.
 Example:
 ```sql
@@ -83,7 +83,7 @@ WHERE LastName = 'Doe';
 ```
 This command updates the "Department" for the employee with the last name "Doe" to 'Finance'.
 
-DELETE:
+## DELETE:
 The DELETE statement is used to remove rows from a table.  
 Example:
 ```sql

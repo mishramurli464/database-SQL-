@@ -148,7 +148,63 @@ ROLLBACK TO point1;
 In this example, the SAVEPOINT statement is used to create an intermediate point called "point1" within the transaction. Later, you can use ROLLBACK TO point1 to revert the transaction to that specific point.
 
 # Data Integrity Constraints:  
-SQL supports the definition of constraints, such as PRIMARY KEY, FOREIGN KEY, CHECK, and UNIQUE, to ensure data integrity and enforce rules on data.
+SQL supports the definition of constraints, such as PRIMARY KEY, FOREIGN KEY, CHECK, and UNIQUE, to ensure data integrity and enforce rules on data. 
+## Primary Key Constraint:
+Example:
+```sql
+CREATE TABLE Students (
+    StudentID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50)
+);
+```  
+In this example, the "StudentID" column is designated as the primary key, ensuring that each student record is uniquely identified by their student ID.
+
+## Foreign Key Constraint:
+Example:
+```sql
+CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY,
+    CustomerID INT,
+    OrderDate DATE,
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+);
+```  
+Here, the "CustomerID" column in the "Orders" table is a foreign key that references the "CustomerID" column in the "Customers" table, ensuring that orders are associated with valid customers.
+
+## Unique Constraint:
+Example:
+```sql
+CREATE TABLE Products (
+    ProductID INT PRIMARY KEY,
+    ProductName VARCHAR(50) UNIQUE,
+    Price DECIMAL(10, 2)
+);
+```  
+In this example, the "ProductName" column must have unique values, but it can contain null values.
+
+## Check Constraint:
+Example:
+```sql
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY,
+    BirthDate DATE,
+    HireDate DATE,
+    CONSTRAINT CHK_HireDate CHECK (HireDate >= BirthDate)
+);
+```  
+The "CHK_HireDate" constraint ensures that the "HireDate" is not earlier than the "BirthDate."
+
+## Not Null Constraint:
+Example:
+```sql
+CREATE TABLE Customers (
+    CustomerID INT PRIMARY KEY,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL
+);
+```  
+This constraint ensures that both "FirstName" and "LastName" must have values for every customer.
 
 # Aggregation and Grouping:  
 SQL provides functions like SUM, AVG, COUNT, and GROUP BY for performing aggregate calculations and grouping data.

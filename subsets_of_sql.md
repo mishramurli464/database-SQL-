@@ -193,7 +193,7 @@ CREATE TABLE Employees (
     CONSTRAINT CHK_HireDate CHECK (HireDate >= BirthDate)
 );
 ```  
-The "CHK_HireDate" constraint ensures that the "HireDate" is not earlier than the "BirthDate."
+The "CHK_HireDate" constraint ensures that the "HireDate" is not earlier than the "BirthDate."  
 
 ## Not Null Constraint:
 Example:

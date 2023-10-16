@@ -62,7 +62,35 @@ TRUNCATE TABLE Employees;
 This command would delete all rows from the "Employees" table, leaving an empty table.  
 
 # Data Manipulation Language (DML): 
-DML is used for modifying and manipulating data within the database. It includes statements like INSERT, UPDATE, and DELETE for adding, modifying, and removing records.
+DML is used for modifying and manipulating data within the database. It includes statements like INSERT, UPDATE, and DELETE for adding, modifying, and removing records.  
+
+INSERT:
+The INSERT statement is used to add new rows (records) to a table.
+Example:
+```sql
+INSERT INTO Employees (FirstName, LastName, Department)
+VALUES ('John', 'Doe', 'HR');
+```  
+This SQL command adds a new employee to the "Employees" table with the specified first name, last name, and department.
+
+UPDATE:
+The UPDATE statement is used to modify existing data in a table.
+Example:
+```sql
+UPDATE Employees
+SET Department = 'Finance'
+WHERE LastName = 'Doe';
+```
+This command updates the "Department" for the employee with the last name "Doe" to 'Finance'.
+
+DELETE:
+The DELETE statement is used to remove rows from a table.  
+Example:
+```sql
+DELETE FROM Employees
+WHERE EmployeeID = 101;
+```  
+This command deletes the employee with an "EmployeeID" of 101 from the "Employees" table.
 
 # Data Control Language (DCL):  
 DCL is used for controlling access to data. It includes statements like GRANT and REVOKE to manage permissions and access rights.

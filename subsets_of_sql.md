@@ -93,7 +93,21 @@ WHERE EmployeeID = 101;
 This command deletes the employee with an "EmployeeID" of 101 from the "Employees" table.
 
 # Data Control Language (DCL):  
-DCL is used for controlling access to data. It includes statements like GRANT and REVOKE to manage permissions and access rights.
+DCL is used for controlling access to data. It includes statements like GRANT and REVOKE to manage permissions and access rights.  
+
+## GRANT:  
+Example:  
+```sql
+GRANT SELECT, INSERT ON Employees TO HR_Manager;
+```  
+This command grants the SELECT and INSERT privileges on the "Employees" table to the "HR_Manager" user or role. After this command, the "HR_Manager" will be able to query and insert data into the "Employees" table.
+
+## REVOKE:
+Example:
+```sql
+REVOKE INSERT ON Employees FROM Temporary_Employee;
+```  
+This command revokes the INSERT privilege on the "Employees" table from the "Temporary_Employee" user or role. After this command, the "Temporary_Employee" will no longer be able to insert data into the "Employees" table.
 
 # Transaction Control Language (TCL):  
 TCL is used for managing transactions in a database. It includes commands like COMMIT, ROLLBACK, and SAVEPOINT to control transaction behavior.

@@ -130,7 +130,7 @@ BEGIN TRANSACTION;
 
 ROLLBACK;
 ```  
-In this example, the ROLLBACK statement is used to cancel the changes made within a transaction, and the database returns to its state prior to the transaction.
+In this example, the ROLLBACK statement is used to cancel the changes made within a transaction, and the database returns to its state prior to the transaction.  
 
 ## SAVEPOINT:
 Example:

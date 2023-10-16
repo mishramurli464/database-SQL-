@@ -209,7 +209,7 @@ This constraint ensures that both "FirstName" and "LastName" must have values fo
 # Aggregation and Grouping:  
 SQL provides functions like SUM, AVG, COUNT, and GROUP BY for performing aggregate calculations and grouping data.  
 
-1) Aggregate Functions:
+1) Aggregate Functions:   
 COUNT(): Counts the number of records in a table.
 
 ```sql

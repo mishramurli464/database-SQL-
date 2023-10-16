@@ -207,8 +207,98 @@ CREATE TABLE Customers (
 This constraint ensures that both "FirstName" and "LastName" must have values for every customer.
 
 # Aggregation and Grouping:  
-SQL provides functions like SUM, AVG, COUNT, and GROUP BY for performing aggregate calculations and grouping data.
+SQL provides functions like SUM, AVG, COUNT, and GROUP BY for performing aggregate calculations and grouping data.  
 
+1) Aggregate Functions:
+COUNT(): Counts the number of records in a table.
+
+```sql
+SELECT COUNT(*) FROM Employees;
+```  
+SUM(): Calculates the total salary of employees.
+
+```sql
+SELECT SUM(Salary) FROM Employees;
+```  
+AVG(): Calculates the average age of customers.
+```sql
+SELECT AVG(Age) FROM Customers;
+```
+MAX(): Retrieves the highest sale amount.  
+```sql
+SELECT MAX(SaleAmount) FROM Sales;
+```
+MIN(): Retrieves the lowest temperature recorded.
+```sql
+SELECT MIN(Temperature) FROM WeatherData;
+```
+2) String Functions:
+
+CONCAT(): Combines first name and last name.  
+```sql
+SELECT CONCAT(FirstName, ' ', LastName) AS FullName FROM Employees;
+```  
+SUBSTRING(): Extracts the first 3 characters of a string.
+```sql
+SELECT SUBSTRING(ProductName, 1, 3) AS ShortName FROM Products;
+```
+UPPER(): Converts a string to uppercase.
+```sql
+SELECT UPPER(City) FROM Customers;
+```  
+LOWER(): Converts a string to lowercase.
+```sql
+SELECT LOWER(Description) FROM Products;
+```
+LENGTH(): Calculates the length of a string.
+```sql
+SELECT LENGTH(Comments) FROM Reviews;
+```
+3) Date and Time Functions:
+
+CURRENT_DATE: Retrieves the current date.
+```sql
+SELECT CURRENT_DATE AS Today;
+```
+
+CURRENT_TIME: Retrieves the current time.
+```sql
+SELECT CURRENT_TIME AS CurrentTime;
+```
+CURRENT_TIMESTAMP: Retrieves the current date and time.
+```sql
+SELECT CURRENT_TIMESTAMP AS CurrentDateTime;
+```
+DATEADD(): Adds 7 days to a given date.  
+```sql
+SELECT DATEADD(DAY, 7, OrderDate) AS NewDeliveryDate FROM Orders;
+```
+DATEDIFF(): Calculates the number of days between two dates.  
+```sql
+SELECT DATEDIFF(DAY, OrderDate, ShipmentDate) AS DaysToShip FROM Orders;
+```
+4)Mathematical Functions:
+
+ROUND(): Rounds a number to 2 decimal places.
+```sql
+SELECT ROUND(Price, 2) FROM Products;
+```
+ABS(): Returns the absolute value of a number.
+```sql
+SELECT ABS(Discount) FROM Sales;
+```
+POWER(): Calculates the square of a number.
+```sql
+SELECT POWER(2, 3) AS Result;
+```
+SQRT(): Calculates the square root of a number.
+```sql
+SELECT SQRT(25) AS SquareRoot;
+```
+RAND(): Generates a random number between 1 and 100.
+```sql
+SELECT RAND() * 100 AS RandomNumber;
+```
 # Joins:  
 SQL allows you to combine data from multiple tables using different types of joins, such as INNER JOIN, LEFT JOIN, and RIGHT JOIN.
 

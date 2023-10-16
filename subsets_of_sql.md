@@ -3,7 +3,7 @@ SQL (Structured Query Language) is a comprehensive language used for managing an
 Some of the key subsets and areas of SQL include:  
 
 # Data Query Language (DQL): 
-This subset of SQL is used for querying and retrieving data from a database. It primarily includes the SELECT statement to retrieve data from one or more tables.
+This subset of SQL is used for querying and retrieving data from a database. It primarily includes the SELECT statement to retrieve data from one or more tables.  
 
 # Data Definition Language (DDL):  
 DDL is used for defining the structure and schema of a database. It includes statements like CREATE TABLE, ALTER TABLE, DROP TABLE, and others for creating, modifying, and deleting database objects.  

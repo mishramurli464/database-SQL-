@@ -110,7 +110,42 @@ REVOKE INSERT ON Employees FROM Temporary_Employee;
 This command revokes the INSERT privilege on the "Employees" table from the "Temporary_Employee" user or role. After this command, the "Temporary_Employee" will no longer be able to insert data into the "Employees" table.
 
 # Transaction Control Language (TCL):  
-TCL is used for managing transactions in a database. It includes commands like COMMIT, ROLLBACK, and SAVEPOINT to control transaction behavior.
+TCL is used for managing transactions in a database. It includes commands like COMMIT, ROLLBACK, and SAVEPOINT to control transaction behavior.  
+
+## COMMIT:
+Example:
+```sql
+BEGIN TRANSACTION;
+-- SQL statements within the transaction
+COMMIT;
+```  
+In this example, the COMMIT statement is used to save the changes made within a transaction to the database. The changes are now permanent.
+
+## ROLLBACK:
+Example:
+```sql
+BEGIN TRANSACTION;
+
+-- SQL statements within the transaction
+
+ROLLBACK;
+```  
+In this example, the ROLLBACK statement is used to cancel the changes made within a transaction, and the database returns to its state prior to the transaction.
+
+## SAVEPOINT:
+Example:
+```sql
+BEGIN TRANSACTION;
+
+-- SQL statements within the transaction
+
+SAVEPOINT point1;
+
+-- More SQL statements
+
+ROLLBACK TO point1;
+```  
+In this example, the SAVEPOINT statement is used to create an intermediate point called "point1" within the transaction. Later, you can use ROLLBACK TO point1 to revert the transaction to that specific point.
 
 # Data Integrity Constraints:  
 SQL supports the definition of constraints, such as PRIMARY KEY, FOREIGN KEY, CHECK, and UNIQUE, to ensure data integrity and enforce rules on data.

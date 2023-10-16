@@ -37,7 +37,7 @@ DROP TABLE Employees;
 ```
 This command would remove the "Employees" table from the database, including all its data.  
 
-CREATE INDEX:
+## CREATE INDEX:
 The CREATE INDEX statement is used to create an index on one or more columns of a table to improve query performance.
 Example:  
 ```sql
@@ -45,7 +45,7 @@ CREATE INDEX idx_LastName ON Employees(LastName);
 ```
 This command creates an index on the "LastName" column of the "Employees" table.  
 
-DROP INDEX:
+## DROP INDEX:
 The DROP INDEX statement is used to remove an existing index from a table.
 Example:  
 ```sql
@@ -53,7 +53,7 @@ DROP INDEX idx_LastName;
 ```
 This command would remove the "idx_LastName" index from the "Employees" table.  
 
-TRUNCATE TABLE:
+## TRUNCATE TABLE:
 The TRUNCATE TABLE statement is used to remove all rows from a table while keeping the table structure intact.
 Example:  
 ```sql

@@ -36,6 +36,31 @@ Example:
 DROP TABLE Employees;
 ```
 This command would remove the "Employees" table from the database, including all its data.  
+
+CREATE INDEX:
+The CREATE INDEX statement is used to create an index on one or more columns of a table to improve query performance.
+Example:  
+```sql
+CREATE INDEX idx_LastName ON Employees(LastName);
+```
+This command creates an index on the "LastName" column of the "Employees" table.  
+
+DROP INDEX:
+The DROP INDEX statement is used to remove an existing index from a table.
+Example:  
+```sql
+DROP INDEX idx_LastName;
+```
+This command would remove the "idx_LastName" index from the "Employees" table.  
+
+TRUNCATE TABLE:
+The TRUNCATE TABLE statement is used to remove all rows from a table while keeping the table structure intact.
+Example:  
+```sql
+TRUNCATE TABLE Employees;
+```
+This command would delete all rows from the "Employees" table, leaving an empty table.  
+
 # Data Manipulation Language (DML): 
 DML is used for modifying and manipulating data within the database. It includes statements like INSERT, UPDATE, and DELETE for adding, modifying, and removing records.
 

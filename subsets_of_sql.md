@@ -7,7 +7,7 @@ This subset of SQL is used for querying and retrieving data from a database. It 
 
 # Data Definition Language (DDL):  
 DDL is used for defining the structure and schema of a database. It includes statements like CREATE TABLE, ALTER TABLE, DROP TABLE, and others for creating, modifying, and deleting database objects.  
-## CREATE TABLE:  
+## 1)CREATE TABLE:  
 The CREATE TABLE statement is used to create a new table in the database.
 Example:  
 ```sql
@@ -20,7 +20,7 @@ CREATE TABLE Employees (
 ```
 In this example, a table named "Employees" is created with columns for employee ID, first name, last name, and department.  
 
-## ALTER TABLE:
+## 2)ALTER TABLE:
 The ALTER TABLE statement is used to modify an existing table, such as adding, modifying, or dropping columns.
 Example:
 ```sql
@@ -29,7 +29,7 @@ ADD Email VARCHAR(100);
 ```
 This SQL statement adds an "Email" column to the "Employees" table.  
 
-## DROP TABLE:
+## 3)DROP TABLE:
 The DROP TABLE statement is used to delete an entire table and all its data.
 Example:  
 ```sql
@@ -37,7 +37,7 @@ DROP TABLE Employees;
 ```
 This command would remove the "Employees" table from the database, including all its data.  
 
-## CREATE INDEX:
+## 4)CREATE INDEX:
 The CREATE INDEX statement is used to create an index on one or more columns of a table to improve query performance.
 Example:  
 ```sql
@@ -45,7 +45,7 @@ CREATE INDEX idx_LastName ON Employees(LastName);
 ```
 This command creates an index on the "LastName" column of the "Employees" table.  
 
-## DROP INDEX:
+## 5)DROP INDEX:
 The DROP INDEX statement is used to remove an existing index from a table.
 Example:  
 ```sql
@@ -53,7 +53,7 @@ DROP INDEX idx_LastName;
 ```
 This command would remove the "idx_LastName" index from the "Employees" table.  
 
-## TRUNCATE TABLE:
+## 6)TRUNCATE TABLE:
 The TRUNCATE TABLE statement is used to remove all rows from a table while keeping the table structure intact.
 Example:  
 ```sql
@@ -64,7 +64,7 @@ This command would delete all rows from the "Employees" table, leaving an empty 
 # Data Manipulation Language (DML): 
 DML is used for modifying and manipulating data within the database. It includes statements like INSERT, UPDATE, and DELETE for adding, modifying, and removing records.  
 
-## INSERT:
+## 1)INSERT:
 The INSERT statement is used to add new rows (records) to a table.
 Example:
 ```sql
@@ -73,7 +73,7 @@ VALUES ('John', 'Doe', 'HR');
 ```  
 This SQL command adds a new employee to the "Employees" table with the specified first name, last name, and department.
 
-## UPDATE:
+## 2)UPDATE:
 The UPDATE statement is used to modify existing data in a table.
 Example:
 ```sql
@@ -83,7 +83,7 @@ WHERE LastName = 'Doe';
 ```
 This command updates the "Department" for the employee with the last name "Doe" to 'Finance'.
 
-## DELETE:
+## 3)DELETE:
 The DELETE statement is used to remove rows from a table.  
 Example:
 ```sql
@@ -95,14 +95,14 @@ This command deletes the employee with an "EmployeeID" of 101 from the "Employee
 # Data Control Language (DCL):  
 DCL is used for controlling access to data. It includes statements like GRANT and REVOKE to manage permissions and access rights.  
 
-## GRANT:  
+## 1)GRANT:  
 Example:  
 ```sql
 GRANT SELECT, INSERT ON Employees TO HR_Manager;
 ```  
 This command grants the SELECT and INSERT privileges on the "Employees" table to the "HR_Manager" user or role. After this command, the "HR_Manager" will be able to query and insert data into the "Employees" table.
 
-## REVOKE:
+## 2)REVOKE:
 Example:
 ```sql
 REVOKE INSERT ON Employees FROM Temporary_Employee;
@@ -112,7 +112,7 @@ This command revokes the INSERT privilege on the "Employees" table from the "Tem
 # Transaction Control Language (TCL):  
 TCL is used for managing transactions in a database. It includes commands like COMMIT, ROLLBACK, and SAVEPOINT to control transaction behavior.  
 
-## COMMIT:
+## 1)COMMIT:
 Example:
 ```sql
 BEGIN TRANSACTION;
@@ -121,7 +121,7 @@ COMMIT;
 ```  
 In this example, the COMMIT statement is used to save the changes made within a transaction to the database. The changes are now permanent.
 
-## ROLLBACK:
+## 2)ROLLBACK:
 Example:
 ```sql
 BEGIN TRANSACTION;
@@ -132,7 +132,7 @@ ROLLBACK;
 ```  
 In this example, the ROLLBACK statement is used to cancel the changes made within a transaction, and the database returns to its state prior to the transaction.  
 
-## SAVEPOINT:
+## 3)SAVEPOINT:
 Example:
 ```sql
 BEGIN TRANSACTION;
@@ -149,7 +149,7 @@ In this example, the SAVEPOINT statement is used to create an intermediate point
 
 # Data Integrity Constraints:  
 SQL supports the definition of constraints, such as PRIMARY KEY, FOREIGN KEY, CHECK, and UNIQUE, to ensure data integrity and enforce rules on data. 
-## Primary Key Constraint:
+## 1)Primary Key Constraint:
 Example:
 ```sql
 CREATE TABLE Students (
@@ -160,7 +160,7 @@ CREATE TABLE Students (
 ```  
 In this example, the "StudentID" column is designated as the primary key, ensuring that each student record is uniquely identified by their student ID.
 
-## Foreign Key Constraint:
+## 2)Foreign Key Constraint:
 Example:
 ```sql
 CREATE TABLE Orders (
@@ -172,7 +172,7 @@ CREATE TABLE Orders (
 ```  
 Here, the "CustomerID" column in the "Orders" table is a foreign key that references the "CustomerID" column in the "Customers" table, ensuring that orders are associated with valid customers.
 
-## Unique Constraint:
+## 3)Unique Constraint:
 Example:
 ```sql
 CREATE TABLE Products (
@@ -183,7 +183,7 @@ CREATE TABLE Products (
 ```  
 In this example, the "ProductName" column must have unique values, but it can contain null values.
 
-## Check Constraint:
+## 4)Check Constraint:
 Example:
 ```sql
 CREATE TABLE Employees (
@@ -195,7 +195,7 @@ CREATE TABLE Employees (
 ```  
 The "CHK_HireDate" constraint ensures that the "HireDate" is not earlier than the "BirthDate."  
 
-## Not Null Constraint:
+## 5)Not Null Constraint:
 Example:
 ```sql
 CREATE TABLE Customers (
